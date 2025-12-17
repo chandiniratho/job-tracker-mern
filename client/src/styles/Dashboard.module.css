@@ -1,0 +1,89 @@
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chartWrapper {
+  max-width: 300px;   /* controls circle size */
+  margin: 20px auto; /* centers it */
+}
+
+.button {
+  padding: 8px 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* STATUS BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+}
+
+.applied {
+  background-color: #007bff;
+}
+
+.interview {
+  background-color: #ff9800;
+}
+
+.offer {
+  background-color: #4caf50;
+}
+
+.rejected {
+  background-color: #f44336;
+}
+
+.filter {
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
